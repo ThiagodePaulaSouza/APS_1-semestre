@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+   <!-- Cabeçalho da Página Principal -->
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+   <!-- Implementações Responsivas para Mobile-->
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+
+
+   <title>Ecoponto Comunitário Contra Dengue e Conscientização Coletiva a Comunidade</title>
+
+   <!-- Bootstraps CSS-->
+   <link rel="stylesheet" href="./src/css/bootstrap.min.css">
+   <!-- style css -->
+   <link rel="stylesheet" href="./src/css/style.css">
+   <!-- Responsive-->
+   <link rel="stylesheet" href="./src/css/responsive.css">
+   <!-- fevicon -->
+   <link rel="icon" href="./src/imagens/fevicon.png" type="image/gif" />
+   <!-- Scrollbar Custom CSS -->
+   <link rel="stylesheet" href="./src/css/jquery.mCustomScrollbar.min.css">
+   <!-- Tweaks for older IEs-->
+   <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css"
+      media="screen">
+</head>
+
+<body class="layout-principal">
+   <!-- loader  -->
+   <div class="carregamento_bg">
+      <div class="carregamento"><img src="./src/imagens/loading.gif" alt="#" /></div>
+   </div>
+   <!-- end carregamento -->
+   <!-- header -->
+   <header>
+      <!-- header inner -->
+      <div class="header">
+         <div class="container">
+            <div class="row">
+               <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col logo_section">
+                  <div class="full">
+                     <div class="center-desk">
+                        <div class="logo"> <a href="index.html"><img src="./src/imagens/logo.jpg" alt="#"></a> </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-xl-9 col-lg-9 col-md-9 col-sm-9">
+                  <div class="menu-area">
+                     <div class="limit-box">
+                        <nav class="main-menu">
+                           <ul class="menu-area-main">
+                              <li class="active"> <a href="#">Bem Vindo, Proposta de Trabalho para <br> APS UNIP 2024 -
+                                    Sorocaba</a> </li>
+                              <li> <a href="#Sobre">Sobre o trabalho</a> </li>
+                              <li><a href="#Ecopontos">Ecopontos</a></li>
+                              <li><a href="#LocaisDengueMaps">Locais de Pontos de Dengue no Mapa</a></li>
+                              <li><a href="#ConcientizacaoComunitaria">Concientização Coletiva a Comunidade</a></li>
+                              <li><a href="#Contato">Contato</a></li>
+                              <li class="last"><a href="#"><img src="./src/imagens/search_icon.png" alt="icon" /></a></li>
+                           </ul>
+                        </nav>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- end header inner -->
+   </header>
+
+   <section>
+      <div id="main_slider" class="carousel slide banner-main" data-ride="carousel">
+         <ol class="carousel-indicators">
+            <li data-target="#main_slider" data-slide-to="0" class="active"></li>
+            <li data-target="#main_slider" data-slide-to="1"></li>
+            <li data-target="#main_slider" data-slide-to="2"></li>
+         </ol>
+         <div class="carousel-inner">
+            <div class="carousel-item active">
+               <div class="container">
+                  <div class="row marginii">
+                     <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+                        <div class="carousel-caption ">
+                           <h1>Bem Vindo Ao Site<br></h1>
+                           <h2><span style="color: rgb(22, 255, 236);">De Auxilio a Concientização Comunitária <br> Contra Dengue e
+                              Conscientização Coletiva <br> a Comunidade </h2><strong class="color">Saiba Mais</strong></span>
+                           </h1>
+                           <a class="btn btn-lg btn-primary" href="#" role="button">About</a>
+                           <a class="btn btn-lg btn-primary" href="#" role="button">Contact US</a>
+                        </div>
+                     </div>
+                     <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+                        <div class="img-box">
+                           <figure><img src="./src/imagens/concientizaçãoDesenho.jpg" alt="img" /></figure>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="carousel-item">
+               <div class="container">
+                  <div class="row marginii">
+                     <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+                        <div class="carousel-caption ">
+                           <h1>Pontos Descobertos <strong class="color">Humberto de Campos</strong></h1>
+                           <p><span style="color: rgb(18, 255, 136);">Situado na Zona Oeste de Sorocaba, após pontilhão, ponto tem descarte incorreto de residuos pelos moradores.</span></p>
+                           <a class="btn btn-lg btn-primary" href="#" role="button">About</a>
+                           <a class="btn btn-lg btn-primary" href="#" role="button">Contact US</a>
+                        </div>
+                     </div>
+                     <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+                        <div class="img-box ">
+                           <figure><img src="./src/imagens/ponto1DengueExemplo.PNG" alt="img" /></figure>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="carousel-item">
+               <div class="container">
+                  <div class="row marginii">
+                     <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+                        <div class="carousel-caption ">
+                           <h1>Pontos Descobertos <strong class="color">Jardim Itangua</strong></h1>
+                           <p><span style="color: rgb(18, 255, 136);">Situado na Zona Oeste de Sorocaba, próximo a escola Elza Salvestro Bonilha ponto tem descarte incorreto de residuos pelos moradores.</span></p>
+                           <a class="btn btn-lg btn-primary" href="#" role="button">About</a>
+                           <a class="btn btn-lg btn-primary" href="#" role="button">Contact US</a>
+                        </div>
+                     </div>
+                     <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+                        <div class="img-box">
+                           <figure><img src="./src/imagens/ponto2DengueExemplo.PNG" alt="img" /></figure>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="carousel-item">
+               <div class="container">
+                  <div class="row marginii">
+                     <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+                        <div class="carousel-caption ">
+                           <h1>Possíveis Criadouros <strong class="color">Afonso Vergueiro</strong></h1>
+                           <p><span style="color: rgb(18, 255, 136);">Situado na Centro de Sorocaba, próximo ao Terminal Santo Antonio ponto de ferrovia sem devida manutenção.</span></p>
+                           <a class="btn btn-lg btn-primary" href="#" role="button">About</a>
+                           <a class="btn btn-lg btn-primary" href="#" role="button">Contact US</a>
+                        </div>
+                     </div>
+                     <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+                        <div class="img-box">
+                           <figure><img src="./src/imagens/ponto3DengueExemplo.PNG" alt="img" /></figure>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <a class="carousel-control-prev" href="#main_slider" role="button" data-slide="prev">
+            <i class='fa fa-angle-left'></i></a>
+         <a class="carousel-control-next" href="#main_slider" role="button" data-slide="next">
+            <i class='fa fa-angle-right'></i>
+         </a>
+      </div>
+   </section>
+
+   <div id="Sobre" class="Sobre_oque">
+      <div class="container">
+         <div class="row">
+            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+               <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+                  <div class="Sobre-box">
+                     <h2>12000</h2>
+                     <div class="white-bg">
+                        <span>Pessoas Com Dengue até Maio</span>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+                  <div class="Sobre-box">
+                     <h2>3500</h2>
+                     <div class="white-bg">
+                        <span>Novos Casos Na Semana</span>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+                  <div class="Sobre-box">
+                     <h2>6</h2>
+                     <div class="white-bg">
+                        <span>Mortes Confirmadas esse Ano</span>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+               <div class="Sobre-box">
+                  <div class="titlepage">
+                     <h2>Sobre a Região e Sorocaba Segundo G1</h2>
+                     <h3>Sorocaba é o 2º município do Brasil no ranking nacional de Cidades Sustentáveis da ONU</h3>
+                     <span>Sorocaba (SP) foi eleita a 1ª cidade do estado de São Paulo e a 2ª do Brasil no ranking
+                        nacional de Cidades Sustentáveis da Organização das Nações Unidas (ONU), na categoria que
+                        abrange os municípios brasileiros signatários com população entre 501 mil e 1 milhão de
+                        habitantes.</span>
+                     <span>
+                        O que é o Programa de Cidades Sustentáveis
+                        O Programa Cidades Sustentáveis é uma agenda de sustentabilidade urbana, que incorpora as
+                        dimensões social, ambiental, econômica, política e cultural ao planejamento municipal.
+
+                        O programa oferece ferramentas e metodologias de apoio à gestão pública e ao planejamento urbano
+                        integrado, além de mecanismos de controle social e estímulo à participação cidadã.
+                     </span>
+                     <div class="leia-mais">
+                        <a
+                           href="https://g1.globo.com/sp/sorocaba-jundiai/noticia/2023/08/15/sorocaba-e-a-2a-cidade-do-brasil-no-ranking-nacional-de-cidades-sustentaveis-da-onu.ghtml">Leia
+                           Mais</a>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+   <!-- end about -->
+   <!--Ecoponto -->
+   <div id="Ecoponto" class="Ecoponto">
+      <div class="container">
+         <div class="row">
+            <div class="col-md-12">
+               <div class="titlepage">
+                  <h2>Ecopontos de Descartes de Lixos </h2>
+               </div>
+            </div>
+         </div>
+      </div>
+<!--       <div class="container-fluid margin-r-l">
+         <div class="row">
+            <div class="col-xl-3 col-lg-3 col-md-3 col-sm-12 thumb">
+               <div class="Ecoponto-box">
+                  <figure>
+                     <a href="images/1.jpg" class="fancybox" rel="ligthbox">
+                        <img src="./src/images/1.jpg" class="zoom img-fluid " alt="">
+                     </a>
+                     <span class="hoverle">
+                        <a href="images/1.jpg" class="fancybox" rel="ligthbox">View</a>
+                     </span>
+                  </figure>
+               </div>
+            </div>
+            <div class="col-xl-3 col-lg-3 col-md-3 col-sm-12 thumb">
+               <div class="Ecoponto-box">
+                  <figure>
+                     <a href="images/2.jpg" class="fancybox" rel="ligthbox">
+                        <img src="./src/images/2.jpg" class="zoom img-fluid " alt="">
+                     </a>
+                     <span class="hoverle">
+                        <a href="images/1.jpg" class="fancybox" rel="ligthbox">View</a>
+                     </span>
+                  </figure>
+               </div>
+            </div>
+            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 thumb">
+               <div class="Ecoponto-box">
+                  <figure>
+                     <a href="images/3.jpg" class="fancybox" rel="ligthbox">
+                        <img src="./src/images/3.jpg" class="zoom img-fluid " alt="">
+                     </a>
+                     <span class="hoverle">
+                        <a href="images/3.jpg" class="fancybox" rel="ligthbox">View</a>
+                     </span>
+                  </figure>
+               </div>
+            </div>
+            <div class="col-xl-3 col-lg-3 col-md-3 col-sm-12 thumb">
+               <div class="Ecoponto-box">
+                  <figure>
+                     <a href="images/4.jpg" class="fancybox" rel="ligthbox">
+                        <img src="./src/images/4.jpg" class="zoom img-fluid " alt="">
+                     </a>
+                     <span class="hoverle">
+                        <a href="images/4.jpg" class="fancybox" rel="ligthbox">View</a>
+                     </span>
+                  </figure>
+               </div>
+            </div>
+            <div class="col-xl-3 col-lg-3 col-md-3 col-sm-12 thumb">
+               <div class="Ecoponto-box">
+                  <figure>
+                     <a href="images/5.jpg" class="fancybox" rel="ligthbox">
+                        <img src="./src/images/5.jpg" class="zoom img-fluid " alt="">
+                     </a>
+                     <span class="hoverle">
+                        <a href="images/5.jpg" class="fancybox" rel="ligthbox">View</a>
+                     </span>
+                  </figure>
+               </div>
+            </div>
+            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+               <div class="Ecoponto-box">
+                  <figure>
+                     <a href="images/6.jpg" class="fancybox" rel="ligthbox">
+                        <img src="./src/images/6.jpg" class="zoom img-fluid " alt="">
+                     </a>
+                     <span class="hoverle">
+                        <a href="images/6.jpg" class="fancybox" rel="ligthbox">View</a>
+                     </span>
+                  </figure>
+               </div>
+            </div>
+         </div>
+      </div> -->
+      <!-- end Gallery -->
+      <!--contact -->
+      <div id="contact" class="contact">
+         <div class="container">
+
+            <div class="row">
+               <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 paddimg-right">
+                  <div class="row">
+                     <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+                        <div class="map_section">Mapa Ecoponto Vila Helena
+                           <iframe
+                              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3659.523372058647!2d-47.49555682537729!3d-23.477651058520788!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94c5f528630823fb%3A0x60b5bbfd38c0b2a!2sECOPONTO%20VILA%20HELENA!5e0!3m2!1spt-BR!2sbr!4v1714269958911!5m2!1spt-BR!2sbr"
+                              width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                              referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                        
+                        <div class="row">
+                           <div class="col-md-12">
+                              <div class="titlepage">
+                                 <h2>Entre Em Contato para Denuncias</h2>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+                           <form>
+                              <div class="row">
+                                 <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+                                    <input class="form-control" placeholder="Name" type="text" name="Name">
+                                 </div>
+                                 <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+                                    <input class="form-control" placeholder="Email" type="text" name="Email">
+                                 </div>
+                                 <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+                                    <input class="form-control" placeholder="Phone" type="text" name="Phone">
+                                 </div>
+                                 <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+                                    <textarea class="textarea>" placeholder="Message" type="text"
+                                       name="Message"></textarea>
+                                 </div>
+                                 <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+                                    <a href="#">Read More</a>
+                                 </div>
+                              </div>
+                           </form>
+                           <br>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+
+            <footer>
+               <div id="Contato" class="footer">
+                  <div class="container">
+                     <div class="row pdn-top-30">
+                        <div class="col-md-12 ">
+                           <div class="footer-box">
+                              <div class="headinga">
+                                 <h3>Endereço SAQ</h3>
+                                 <span>Prefeitura da Região de Sorocaba</span>
+                                 <p>((15) 3238-2100)</p>
+                              </div>
+                              <ul class="location_icon">
+                                 <li> <a href="#"><img src="./src/icon/facebook.png"></a></li>
+                                 <li> <a href="#"><img src="./src/icon/Twitter.png"></a></li>
+                                 <li> <a href="#"><img src="./src/icon/linkedin.png"></a></li>
+                                 <li> <a href="#"><img src="./src/icon/instagram.png"></a></li>
+                              </ul>
+                              <div class="menu-bottom">
+                                 <ul class="link">
+                                    <li> <a href="#">Inicio</a></li>
+                                    <li> <a href="#">Sobre</a></li>
+                                    <li> <a href="#">Locais</a></li>
+                                    <li> <a href="#">Ecoponto</a></li>
+                                    <li> <a href="#"> Tipos de Lixos</a></li>
+                                    <li> <a href="#"> Contatos</a></li>
+                                 </ul>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="copyright">
+                     <div class="container">
+                        <p>Copyright 2024 Todos os Direitos Reservados</p>
+                     </div>
+                  </div>
+               </div>
+            </footer>
+            <!-- end footer -->
+            <!-- Javascript files-->
+            <script src="./src/js/jquery.min.js"></script>
+            <script src="./src/js/popper.min.js"></script>
+            <script src="./src/js/bootstrap.bundle.min.js"></script>
+            <script src="./src/js/jquery-3.0.0.min.js"></script>
+            <script src="./src/js/plugin.js"></script>
+            <!-- sidebar -->
+            <script src="./src/js/jquery.mCustomScrollbar.concat.min.js"></script>
+            <script src="./src/js/custom.js"></script>
+            <!-- javascript -->
+            <script src="./src/js/owl.carousel.js"></script>
+            <script src="https:cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script>
+            <script>
+               $(document).ready(function () {
+                  $(".fancybox").fancybox({
+                     openEffect: "none",
+                     closeEffect: "none"
+                  });
+
+                  $(".zoom").hover(function () {
+
+                     $(this).addClass('transition');
+                  }, function () {
+
+                     $(this).removeClass('transition');
+                  });
+               });
+
+            </script>
+</body>
+
+</html>
