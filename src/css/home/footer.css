@@ -1,0 +1,11 @@
+footer {
+  width: 100%;
+  padding-block: 1rem;
+  padding-inline: 2rem;
+  background: linear-gradient(90deg, hsl(60, 60%, 50%), hsl(80 70% 50% / 1));
+}
+
+footer > p {
+  padding-top: 1rem;
+  color: #212121;
+}
