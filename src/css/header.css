@@ -1,0 +1,258 @@
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 10%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  color: whitesmoke;
+  background: linear-gradient(90deg, hsl(60, 60%, 50%), hsl(80 70% 50% / 1));
+  transition: 0.5s;
+  z-index: 99;
+}
+
+#logo {
+  height: 5rem;
+  width: 5rem;
+}
+
+#logo2 {
+  height: 0;
+  width: 0;
+}
+
+header > #logo {
+  margin-left: 1rem;
+  transition: all 0.5s ease-in-out;
+}
+
+.menu-hamburguer-elements > #logo {
+  height: 0;
+  width: 0;
+}
+
+.menu-hamburger {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 2rem;
+}
+
+.menu-hamburguer-elements {
+  display: flex;
+  width: 80%;
+  height: 10vh;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu-hamburguer-elements ul {
+  display: flex;
+  gap: 3rem;
+}
+
+.menu-hamburguer-elements li {
+  list-style: none;
+  font-size: 1.4rem;
+}
+
+.menu-hamburguer-elements a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.menu-hamburguer-elements a:hover {
+  color: rgba(20, 20, 20, 0.8);
+}
+
+/* BOTÃO MENU HAMBURGUER */
+.menu {
+  background-color: hsl(100, 60%, 50%);
+  width: 60px;
+  height: 60px;
+  margin: 1rem 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  display: none;
+}
+
+.hamburguer {
+  position: relative;
+  display: block;
+  background: #fff;
+  width: 30px;
+  height: 2px;
+  top: 29px;
+  left: 15px;
+  transition: 0.5s ease-in-out;
+}
+
+.hamburguer:before,
+.hamburguer:after {
+  background: #ffff;
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  transition: 0.5s ease-in-out;
+}
+
+.hamburguer:before {
+  top: -10px;
+}
+
+.hamburguer:after {
+  bottom: -10px;
+}
+
+input#menu-hamburguer {
+  display: none;
+}
+
+/* rotação dos elementos do span */
+input#menu-hamburguer:checked ~ label .hamburguer {
+  transform: rotate(45deg);
+}
+
+input#menu-hamburguer:checked ~ label .hamburguer:before {
+  transform: rotate(90deg);
+  top: 0;
+}
+
+input#menu-hamburguer:checked ~ label .hamburguer:after {
+  transform: rotate(90deg);
+  bottom: 0;
+}
+
+input#menu-hamburguer:checked ~ .menu-hamburguer-elements {
+  right: 0;
+}
+
+/* ----------------------- 800px x 1440px ------------------------*/
+@media only screen and (min-width: 800px) and (max-width: 1440px) {
+  .menu-hamburguer-elements a:hover {
+    color: rgb(214, 161, 214);
+  }
+
+  .menu-hamburger {
+    display: flex;
+    width: auto;
+    flex-direction: column;
+    align-self: flex-end;
+    overflow: auto;
+    z-index: 1;
+    color: white;
+  }
+
+  .menu-hamburguer-elements {
+    width: 30%;
+    height: 100%;
+    background: hsl(0, 0%, 0%, 90%);
+    position: fixed;
+    right: -40%;
+    top: 0;
+
+    padding-inline: 2rem;
+    padding-top: 0.5rem;
+
+    transition: right cubic-bezier(1, 0, 0, 1) 0.8s;
+
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: flex-start;
+
+    padding-top: 0.5vh;
+
+    z-index: -1;
+  }
+
+  .menu-hamburguer-elements ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 1rem;
+  }
+  .menu-hamburguer-elements li {
+    font-size: 1.4rem;
+    list-style: none;
+    margin: 2rem 0;
+  }
+
+  .menu {
+    display: flex;
+    height: 60px;
+    width: 60px;
+  }
+
+  .menu-hamburguer-elements > #logo2 {
+    height: 5rem;
+    width: 5rem;
+  }
+}
+
+/* ----------------------- 100px x 799px ------------------------*/
+@media only screen and (min-width: 100px) and (max-width: 799px) {
+  .menu-hamburguer-elements a:hover {
+    color: rgb(214, 161, 214);
+  }
+
+  .menu-hamburger {
+    display: flex;
+    width: auto;
+    flex-direction: column;
+    align-self: flex-end;
+    overflow: auto;
+    z-index: 1;
+    color: white;
+  }
+
+  .menu-hamburguer-elements {
+    width: 60%;
+    height: 100%;
+    background: hsl(0, 0%, 0%, 90%);
+    position: fixed;
+    right: -90%;
+    top: 0;
+
+    padding-inline: 2rem;
+    padding-top: 0.5rem;
+
+    transition: right cubic-bezier(1, 0, 0, 1) 0.8s;
+
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: flex-start;
+
+    padding-top: 0.5vh;
+
+    z-index: -1;
+  }
+  .menu-hamburguer-elements ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 1rem;
+  }
+  .menu-hamburguer-elements li {
+    font-size: 1.4rem;
+    list-style: none;
+    margin: 2rem 0;
+  }
+
+  .menu {
+    display: flex;
+    height: 60px;
+    width: 60px;
+  }
+
+  .menu-hamburguer-elements > #logo2 {
+    height: 5rem;
+    width: 5rem;
+  }
+}
