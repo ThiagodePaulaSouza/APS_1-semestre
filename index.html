@@ -1,63 +1,55 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="viewport" content="initial-scale=1, maximum-scale=1" />
+<head>
+   <meta charset="UTF-8" />
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
-    <title>
+   <meta name="viewport" content="width=device-width, initial-scale=1" />
+   <meta name="viewport" content="initial-scale=1, maximum-scale=1" />
+
+   <title>
       Ecoponto Comunitário Contra Dengue e Conscientização Coletiva a Comunidade
-    </title>
+   </title>
 
-    <link rel="stylesheet" href="./src/css/reset.css" />
-    <link rel="stylesheet" href="./src/css/normalize.css" />
-    <link rel="stylesheet" href="src/css/grid-system.css" />
+   <link rel="stylesheet" href="./src/css/global.css" />
 
-    <link rel="stylesheet" href="./src/css/global.css" />
-    
-    <link rel="icon" href="assets/images/favicon.ico" />
+   <link rel="icon" href="assets/images/favicon.ico" />
 
-    <script src="src/js/header.js"></script>
-  </head>
+   <script src="src/js/header.js"></script>
+   <script src="src/js/denuncia.js"></script>
+</head>
 
-  <body class="layout-principal">
-    <header id="header">
+<body class="layout-principal">
+   <header id="header">
       <img id="logo" src="assets/images/logo.png" alt="logo do site" />
 
       <nav class="menu-hamburger">
-        <input
-          id="menu-hamburguer"
-          type="checkbox"
-          onclick="onClickMenuHamburgue()"
-        />
-        <label for="menu-hamburguer">
-          <div class="menu">
-            <span class="hamburguer"></span>
-          </div>
-        </label>
+         <input id="menu-hamburguer" type="checkbox" onclick="onClickMenuHamburgue()" />
+         <label for="menu-hamburguer">
+            <div class="menu">
+               <span class="hamburguer"></span>
+            </div>
+         </label>
 
-        <div class="menu-hamburguer-elements show">
-          <img id="logo2" src="assets/images/logo.png" alt="logo do site" />
-          <ul>
-            <li><a href="#Sobre">Sobre</a></li>
-            <li><a href="#Ecopontos">Ecopontos</a></li>
-            <li>
-              <a href="#LocaisDengueMaps">Locais</a>
-            </li>
-            <li>
-              <a href="#ConcientizacaoComunitaria"
-                >Concientização</a
-              >
-            </li>
-            <li><a href="#contatos">Contato</a></li>
-          </ul>
-        </div>
+         <div class="menu-hamburguer-elements show">
+            <img id="logo2" src="assets/images/logo.png" alt="logo do site" />
+            <ul>
+               <li><a href="#Sobre">Sobre</a></li>
+               <li><a href="#ecopontos">Ecopontos</a></li>
+               <li>
+                  <a href="#LocaisDengueMaps">Locais</a>
+               </li>
+               <li>
+                  <a href="#ConcientizacaoComunitaria">Concientização</a>
+               </li>
+               <li><a href="#contatos">Contato</a></li>
+            </ul>
+         </div>
       </nav>
-    </header>
+   </header>
 
-    <!-- <header id="navbar">
+   <!-- <header id="navbar">
       <div class="header">
         <div class="container">
           <div class="row">
@@ -111,7 +103,7 @@
       </div>
     </header> -->
 
-    <section id="Carrosel">
+   <section id="Carrosel">
       <div id="main_slider" class="carousel slide banner-main" data-ride="carousel">
          <ol class="carousel-indicators">
             <li data-target="#main_slider" data-slide-to="0" class="active"></li>
@@ -270,77 +262,43 @@
          </div>
       </div>
    </section>
+-->
+   <section id="ecopontos">
+      <h2 class="center bold">Ecopontos de Descartes de Lixos </h2>
+      <hr>
 
-   <section id="Ecoponto" class="Ecoponto">
-      <div class="container">
-         <div class="row">
-            <div class="col-md-12">
-               <div class="titlepage">
-                  <h2>Ecopontos de Descartes de Lixos </h2>
-               </div>
-            </div>
+      <div id="contact" class="grid">
+         <div class="col-7 sm-col-12">
+            <small for="">Mapa Ecoponto Vila Helena</small>
+            <iframe id="mapa"
+               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3659.523372058647!2d-47.49555682537729!3d-23.477651058520788!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94c5f528630823fb%3A0x60b5bbfd38c0b2a!2sECOPONTO%20VILA%20HELENA!5e0!3m2!1spt-BR!2sbr!4v1714269958911!5m2!1spt-BR!2sbr"
+               allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
          </div>
-      </div>
-
-      <div id="contact" class="contact">
-         <div class="container">
-
-            <div class="row">
-               <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 paddimg-right">
-                  <div class="row">
-                     <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
-                        <div class="map_section">Mapa Ecoponto Vila Helena
-                           <iframe
-                              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3659.523372058647!2d-47.49555682537729!3d-23.477651058520788!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94c5f528630823fb%3A0x60b5bbfd38c0b2a!2sECOPONTO%20VILA%20HELENA!5e0!3m2!1spt-BR!2sbr!4v1714269958911!5m2!1spt-BR!2sbr"
-                              width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-                              referrerpolicy="no-referrer-when-downgrade"></iframe>
-                        </div>
-
-                        <div class="row">
-                           <div class="col-md-12">
-                              <div class="titlepage">
-                                 <h2>Entre Em Contato para Denuncias</h2>
-                              </div>
-                           </div>
-                        </div>
-                        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
-                           <form>
-                              <div class="row">
-                                 <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
-                                    <input class="form-control" placeholder="Name" type="text" name="Name">
-                                 </div>
-                                 <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
-                                    <input class="form-control" placeholder="Email" type="text" name="Email">
-                                 </div>
-                                 <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
-                                    <input class="form-control" placeholder="Phone" type="text" name="Phone">
-                                 </div>
-                                 <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
-                                    <textarea class="textarea>" placeholder="Message" type="text"
-                                       name="Message"></textarea>
-                                 </div>
-                                 <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
-                                    <a href="#">Read More</a>
-                                 </div>
-                              </div>
-                           </form>
-                           <br>
-                        </div>
-                     </div>
-                  </div>
+         <div class="card col-5 sm-col-12">
+            <h2>Entre Em Contato para Denuncias</h2>
+            <form id="form-denuncia" class="grid" onsubmit="onSubmitDenuncia(event)">
+               <input class="col-5 sm-col-12" placeholder="Nome" type="text" name="nome">
+               <input class="col-5 sm-col-12" placeholder="Email" type="text" name="email">
+               <div class="col-12">
+                  <label for="mensagem">Mensagem:</label>
+                  <textarea placeholder="Mensagem" type="text" name="mensagem"></textarea>
                </div>
-            </div>
 
+               <button type="submit" class="col-12">Enviar</button>
+               <small>Denunciar o descarte inadequado de lixo é essencial para proteger o meio ambiente, promover a
+                  saúde pública e garantir a aplicação das leis ambientais.</small>
+            </form>
          </div>
       </div>
    </section>
--->
-   <footer class="grid sm-center" id="contatos">
+
+   <footer id="contatos" class="grid sm-center mt-footer">
       <h3 class="col-3 sm-col-12 sm-center">Contatos</h3>
       <a class="col-3 sm-col-5" href="#">(15) 99999-9999</a>
       <a class="col-3 sm-col-3" href="#">Facebook</a>
       <a class="col-3 sm-col-3" href="#">Instagram</a>
       <p class="col-12">APS 2024 - Ecoponto Comunitário Contra Dengue e Conscientização Coletiva a Comunidade</p>
-   </footer> 
-  </body>
+   </footer>
+</body>
+
 </html>

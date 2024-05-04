@@ -35,7 +35,6 @@ hr {
 }
 
 pre {
-  font-family: monospace, monospace;
   font-size: 1em;
 }
 
@@ -63,7 +62,6 @@ strong {
 code,
 kbd,
 samp {
-  font-family: monospace, monospace;
   font-size: 1em;
 }
 
@@ -218,10 +216,6 @@ template {
   display: none;
 }
 
-@import url("https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i");
-
-@import url(normalize.css);
-
 *,
 *::after,
 *::before {
@@ -237,7 +231,6 @@ html {
 body {
   color: #666666;
   font-size: 14px;
-  font-family: poppins;
   line-height: 1.80857;
   font-weight: normal;
   overflow-x: hidden;
