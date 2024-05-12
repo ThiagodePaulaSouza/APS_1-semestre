@@ -4,40 +4,98 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="../../css/global.css" />
+    <link rel="stylesheet" href="../../css/paginas/concientizacao.css" />
     <title>Intuitivo Sobre Tipos de Lixos</title>
   </head>
 
-  <body>
-    <h1>Lixos Reciclaveis</h1>
-    <p><b>Todo Lixo Tratavel</b></p>
-    <ol>
-      <li>Lixo orgânico</li>
-      <p></p>
-      <li>Lixo reciclável</li>
-      <p></p>
-      <li>Lixo doméstico</li>
-      <p></p>
-      <li>Lixo comercial</li>
-      <p></p>
-      <li>Lixo industrial</li>
-      <p></p>
-      <li>Lixo hospitalar</li>
-      <p></p>
-      <li>Lixo verde</li>
-      <p></p>
-      <li>Lixo eletrônico</li>
-      <p></p>
-    </ol>
+  <body class="layout-principal">
+    <header id="header">
+      <a href="../../../index.html">
+        <img
+          id="logo"
+          src="../../../assets/images/logo.png"
+          alt="logo do site"
+        />
+      </a>
 
-    <h1>Listas Não Reciclaveis</h1>
-    <p><b>Todo Lixo Não Tratavel Usualmente</b></p>
-    <ul>
-      <li>Lixo hospitalar</li>
-      <p></p>
-      <li>Lixo radioativo</li>
-      <p></p>
-    </ul>
+      <nav class="menu-hamburger">
+        <input
+          id="menu-hamburguer"
+          type="checkbox"
+          onclick="onClickMenuHamburgue()"
+        />
+        <label for="menu-hamburguer">
+          <div class="menu">
+            <span class="hamburguer"></span>
+          </div>
+        </label>
 
+        <div class="menu-hamburguer-elements show">
+          <a href="../../../index.html">
+            <img
+              id="logo2"
+              src="../../../assets/images/logo.png"
+              alt="logo do site"
+            />
+          </a>
+          <ul>
+            <li><a href="src/paginas/sobre.html">Sobre</a></li>
+            <li><a href="../../../index.html#ecopontos">Ecopontos</a></li>
+            <li>
+              <a href="../../../index.html#LocaisDengueMaps">Locais</a>
+            </li>
+            <li>
+              <a href="src/paginas/concientizacao.html">Concientização</a>
+            </li>
+            <li><a href="../../../index.html#contatos">Contato</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <section class="content">
+      <h1>Lixos Reciclaveis</h1>
+      <p><b>Todo Lixo Tratavel</b></p>
+      <ol>
+        <li>Lixo orgânico</li>
+        <img src="../../../assets/images/LixoOrganico.jpg" width="10%" />
+        <p></p>
+        <li>Lixo reciclável</li>
+        <img src="../../../assets/images/LixoOrganico.jpg" width="10%" />
+        <p></p>
+        <li>Lixo doméstico</li>
+        <img src="../../../assets/images/LixoOrganico.jpg" width="10%" />
+        <p></p>
+        <li>Lixo comercial</li>
+        <img src="../../../assets/images/LixoOrganico.jpg" width="10%" />
+        <p></p>
+        <li>Lixo industrial</li>
+        <img src="../../../assets/images/LixoOrganico.jpg" width="10%" />
+        <p></p>
+        <li>Lixo hospitalar</li>
+        <img src="../../../assets/images/LixoOrganico.jpg" width="10%" />
+        <p></p>
+        <li>Lixo verde</li>
+        <img src="../../../assets/images/LixoOrganico.jpg" width="10%" />
+        <p></p>
+
+        <li>Lixo eletrônico</li>
+        <img src="../../../assets/images/LixoOrganico.jpg" width="10%" />
+        <p></p>
+      </ol>
+
+      <h1>Listas Não Reciclaveis</h1>
+      <p><b>Todo Lixo Não Tratavel Usualmente</b></p>
+      <ul>
+        <li>Lixo hospitalar</li>
+        <p></p>
+
+        <li>Lixo radioativo</li>
+        <p></p>
+      </ul>
+    </section>
     <footer id="contatos" class="grid sm-center mt-footer">
       <h3 class="col-3 sm-col-12 sm-center">Contatos</h3>
       <a class="col-3 sm-col-5" href="#">(15) 99999-9999</a>
