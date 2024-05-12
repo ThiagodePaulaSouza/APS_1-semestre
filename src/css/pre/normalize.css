@@ -234,6 +234,10 @@ body {
   line-height: 1.80857;
   font-weight: normal;
   overflow-x: hidden;
+  /* background-image: url('./src/imagens/FundoSustentavel.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed; */
 }
 
 a {
