@@ -329,7 +329,8 @@ a {
 
 blockquote {
   margin: 20px 0 20px;
-  padding: 30px;
+
+  padding-bottom: 0;
 }
 
 button {

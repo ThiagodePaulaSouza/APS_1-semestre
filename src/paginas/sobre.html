@@ -1,122 +1,100 @@
 <!DOCTYPE html>
-<html lang="pt-br"">
+<html lang="pt-br">
+  <head>
+    <meta charset=" UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
-<head>
-    <meta charset=" UTF-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1" />
 
+    <title>Sobre & Informações</title>
 
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<meta name="viewport" content="initial-scale=1, maximum-scale=1" />
+    <link rel="stylesheet" href="/src/css/global.css" />
 
+    <link rel="stylesheet" href="/src/css/paginas/sobre.css" />
 
-<title>Sobre & Informações</title>
+    <link rel="icon" href="/assets/images/favicon.ico" />
 
-<link rel="stylesheet" href="../css/global.css" />
+    <script src="/src/js/header.js"></script>
+    <script src="/src/js/denuncia.js"></script>
+  </head>
 
-<link rel="icon" href="/assets/images/favicon.ico" />
-
-<script src="/src/js/header.js"></script>
-<script src="/src/js/denuncia.js"></script>
-
-<style>
-    body {
-        /* Estilo de fundo aleatório */
-        background-image: url('https://source.unsplash.com/1920x1080/?sustainable');
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-attachment: fixed;
-        /* Outros estilos para melhor legibilidade do conteúdo */
-        color: #fff;
-        padding: 30px;
-
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 100vh;
-        flex-direction: column;
-        /* Alterado para empilhar os elementos verticalmente */
-    }
-
-    .content {
-        text-align: left;
-        margin-bottom: 20px;
-        /* Adicionado espaço abaixo do texto */
-    }
-
-    .images-container {
-        display: flex;
-        justify-content: center;
-        margin-bottom: 20px;
-        /* Adicionado espaço abaixo das imagens */
-    }
-
-    .image-wrapper {
-        margin-right: 5px;
-        /* Adicionado espaçamento entre as imagens */
-    }
-
-    img {
-        max-width: 75%;
-        /* Definido o tamanho máximo da imagem */
-        max-height: auto;
-        /* Manter a proporção da imagem */
-    }
-</style>
-
-</head>
-
-<body class="layout-principal">
+  <body class="layout-principal">
     <header id="header">
-        <!-- <img id="logo" src="assets/images/logo.png" alt="logo do site" /> -->
+      <a href="/index.html">
+        <img id="logo" src="/assets/images/logo.png" alt="logo do site" />
+      </a>
 
-        <nav class="menu-hamburger">
-            <input id="menu-hamburguer" type="checkbox" onclick="onClickMenuHamburgue()" />
-            <label for="menu-hamburguer">
-                <div class="menu">
-                    <span class="hamburguer"></span>
-                </div>
-            </label>
+      <nav class="menu-hamburger">
+        <input
+          id="menu-hamburguer"
+          type="checkbox"
+          onclick="onClickMenuHamburgue()"
+        />
+        <label for="menu-hamburguer">
+          <div class="menu">
+            <span class="hamburguer"></span>
+          </div>
+        </label>
 
-            <div class="menu-hamburguer-elements show">
-                <!-- <img id="logo2" src="assets/images/logo.png" alt="logo do site" /> -->
-                <ul>
-                    <li><a href="#Sobre">Sobre</a></li>
-                    <li><a href="#ecopontos">Ecopontos</a></li>
-                    <li>
-                        <a href="#LocaisDengueMaps">Locais</a>
-                    </li>
-                    <li>
-                        <a href="/src/paginas/concientizacao_comunitaria.html">Concientização</a>
-                    </li>
-                    <li><a href="#contatos">Contato</a></li>
-                </ul>
-            </div>
-        </nav>
+        <div class="menu-hamburguer-elements show">
+          <a href="/index.html">
+            <img id="logo2" src="/assets/images/logo.png" alt="logo do site" />
+          </a>
+          <ul>
+            <li><a href="#Sobre">Sobre</a></li>
+            <li><a href="#ecopontos">Ecopontos</a></li>
+            <li>
+              <a href="#LocaisDengueMaps">Locais</a>
+            </li>
+            <li>
+              <a href="/src/paginas/concientizacao.html">Concientização</a>
+            </li>
+            <li><a href="#contatos">Contato</a></li>
+          </ul>
+        </div>
+      </nav>
     </header>
 
-<h2>Sobre a Região e Sorocaba Segundo G1</h2>
-<h3>Sorocaba é o 2º município do Brasil no ranking nacional de Cidades Sustentáveis da ONU</h3>
-<span>Sorocaba (SP) foi eleita a 1ª cidade do estado de São Paulo e a 2ª do Brasil no ranking
-   nacional de Cidades Sustentáveis da Organização das Nações Unidas (ONU), na categoria que
-   abrange os municípios brasileiros signatários com população entre 501 mil e 1 milhão de
-   habitantes.</span>
-<span>
-   O que é o Programa de Cidades Sustentáveis
-   O Programa Cidades Sustentáveis é uma agenda de sustentabilidade urbana, que incorpora as
-   dimensões social, ambiental, econômica, política e cultural ao planejamento municipal.
+    <h2>Sobre a Região e Sorocaba Segundo G1</h2>
+    <h3>
+      Sorocaba é o 2º município do Brasil no ranking nacional de Cidades
+      Sustentáveis da ONU
+    </h3>
+    <span
+      >Sorocaba (SP) foi eleita a 1ª cidade do estado de São Paulo e a 2ª do
+      Brasil no ranking nacional de Cidades Sustentáveis da Organização das
+      Nações Unidas (ONU), na categoria que abrange os municípios brasileiros
+      signatários com população entre 501 mil e 1 milhão de habitantes.</span
+    >
+    <span>
+      O que é o Programa de Cidades Sustentáveis O Programa Cidades Sustentáveis
+      é uma agenda de sustentabilidade urbana, que incorpora as dimensões
+      social, ambiental, econômica, política e cultural ao planejamento
+      municipal. O programa oferece ferramentas e metodologias de apoio à gestão
+      pública e ao planejamento urbano integrado, além de mecanismos de controle
+      social e estímulo à participação cidadã.
+    </span>
 
-   O programa oferece ferramentas e metodologias de apoio à gestão pública e ao planejamento urbano
-   integrado, além de mecanismos de controle social e estímulo à participação cidadã.
-</span>
+    <div class="leia-mais">
+      <a
+        href="https://g1.globo.com/sp/sorocaba-jundiai/noticia/2023/08/15/sorocaba-e-a-2a-cidade-do-brasil-no-ranking-nacional-de-cidades-sustentaveis-da-onu.ghtml"
+        >Leia Mais</a
+      >
+    </div>
 
+    <a href="../paginas/subpaginas/Curiosidades.html">Curiosidades</a>
 
-<div class="leia-mais">
-    <a
-       href="https://g1.globo.com/sp/sorocaba-jundiai/noticia/2023/08/15/sorocaba-e-a-2a-cidade-do-brasil-no-ranking-nacional-de-cidades-sustentaveis-da-onu.ghtml">Leia
-       Mais</a>
-</div>
-
-<a href="../paginas/subpaginas/Curiosidades.html">Curiosidades</a>
-
-<a href="../paginas/subpaginas/tipos_lixos.html">Tipos de Lixos</a>
+    <a href="../paginas/subpaginas/tipos_lixos.html">Tipos de Lixos</a>
+    <footer id="contatos" class="grid sm-center mt-footer">
+      <h3 class="col-3 sm-col-12 sm-center">Contatos</h3>
+      <a class="col-3 sm-col-5" href="#">(15) 99999-9999</a>
+      <a class="col-3 sm-col-3" href="#">Facebook</a>
+      <a class="col-3 sm-col-3" href="#">Instagram</a>
+      <p class="col-12">
+        APS 2024 - Ecoponto Comunitário Contra Dengue e Conscientização Coletiva
+        a Comunidade
+      </p>
+    </footer>
+  </body>
+</html>

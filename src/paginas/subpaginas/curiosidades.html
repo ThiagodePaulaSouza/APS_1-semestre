@@ -1,128 +1,108 @@
 <!DOCTYPE html>
-<html lang="pt-br"">
+<html lang="pt-br">
+  <head>
+    <meta charset=" UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
-<head>
-    <meta charset=" UTF-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1" />
 
+    <title>Curiosidades</title>
 
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<meta name="viewport" content="initial-scale=1, maximum-scale=1" />
+    <link rel="stylesheet" href="/src/css/global.css" />
+    <link rel="stylesheet" href="/src/css/paginas/curiosidade.css" />
 
-<title>Curiosidades</title>
+    <link rel="icon" href="/assets/images/favicon.ico" />
 
-<link rel="stylesheet" href="/src/css/global.css" />
+    <script src="/src/js/header.js"></script>
+    <script src="/src/js/denuncia.js"></script>
+  </head>
 
-<link rel="icon" href="/assets/images/favicon.ico" />
-
-<script src="/src/js/header.js"></script>
-<script src="/src/js/denuncia.js"></script>
-
-<style>
-    body {
-        /* Estilo de fundo aleatório */
-        background-image: url('https://source.unsplash.com/1920x1080/?sustainable');
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-attachment: fixed;
-        /* Outros estilos para melhor legibilidade do conteúdo */
-        color: #fff;
-        padding: 350px;
-
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 100vh;
-        flex-direction: column;
-        /* Alterado para empilhar os elementos verticalmente */
-    }
-
-    .content {
-        text-align: left;
-        margin-bottom: 20px;
-        /* Adicionado espaço abaixo do texto */
-    }
-
-    .images-container {
-        display: flex;
-        justify-content: center;
-        margin-bottom: 20px;
-        /* Adicionado espaço abaixo das imagens */
-    }
-
-    .image-wrapper {
-        margin-right: 5px;
-        /* Adicionado espaçamento entre as imagens */
-    }
-
-    img {
-        max-width: 75%;
-        /* Definido o tamanho máximo da imagem */
-        max-height: auto;
-        /* Manter a proporção da imagem */
-    }
-</style>
-
-</head>
-
-<body class="layout-principal">
+  <body class="layout-principal">
     <header id="header">
-        <!-- <img id="logo" src="assets/images/logo.png" alt="logo do site" /> -->
+      <a href="/index.html">
+        <img id="logo" src="/assets/images/logo.png" alt="logo do site" />
+      </a>
 
-        <nav class="menu-hamburger">
-            <input id="menu-hamburguer" type="checkbox" onclick="onClickMenuHamburgue()" />
-            <label for="menu-hamburguer">
-                <div class="menu">
-                    <span class="hamburguer"></span>
-                </div>
-            </label>
+      <nav class="menu-hamburger">
+        <input
+          id="menu-hamburguer"
+          type="checkbox"
+          onclick="onClickMenuHamburgue()"
+        />
+        <label for="menu-hamburguer">
+          <div class="menu">
+            <span class="hamburguer"></span>
+          </div>
+        </label>
 
-            <div class="menu-hamburguer-elements show">
-                <!-- <img id="logo2" src="assets/images/logo.png" alt="logo do site" /> -->
-                <ul>
-                    <li><a href="#Sobre">Sobre</a></li>
-                    <li><a href="#ecopontos">Ecopontos</a></li>
-                    <li>
-                        <a href="#LocaisDengueMaps">Locais</a>
-                    </li>
-                    <li>
-                        <a href="src/paginas/concientizacao_comunitaria.html">Concientização</a>
-                    </li>
-                    <li><a href="#contatos">Contato</a></li>
-                </ul>
-            </div>
-        </nav>
+        <div class="menu-hamburguer-elements show">
+          <a href="/index.html">
+            <img id="logo2" src="/assets/images/logo.png" alt="logo do site" />
+          </a>
+          <ul>
+            <li><a href="/src/paginas/sobre.html">Sobre</a></li>
+            <li><a href="/index.html#ecopontos">Ecopontos</a></li>
+            <li>
+              <a href="/index.html#LocaisDengueMaps">Locais</a>
+            </li>
+            <li>
+              <a href="src/paginas/concientizacao.html">Concientização</a>
+            </li>
+            <li><a href="/index.html#contatos">Contato</a></li>
+          </ul>
+        </div>
+      </nav>
     </header>
 
     <div class="content">
-        <h1>Quando a Dengue Surgiu ?</h1>
-        <p>A dengue é uma doença que existe há séculos, mas seus registros mais antigos datam de textos chineses do
-            século
-            III dC. Naquela época, a doença era chamada de “água venenosa” e “veias venenosas”. Ao longo da história, a
-            dengue foi encontrada em todo o mundo, principalmente em regiões tropicais e subtropicais onde as condições
-            climáticas são adequadas para a reprodução de seu principal vetor, o mosquito Aedes aegypti. O interesse
-            científico pela dengue continuou a crescer durante os séculos XIX e XX, principalmente após a identificação,
-            em
-            1943, do vírus causador da doença, o vírus da dengue (DENV). Desde então, os esforços para compreender,
-            prevenir
-            e controlar a dengue aumentaram. Tem um impacto significativo em todo o mundo</p>
+      <h1>Quando a Dengue Surgiu ?</h1>
+      <p>
+        A dengue é uma doença que existe há séculos, mas seus registros mais
+        antigos datam de textos chineses do século III dC. Naquela época, a
+        doença era chamada de “água venenosa” e “veias venenosas”. Ao longo da
+        história, a dengue foi encontrada em todo o mundo, principalmente em
+        regiões tropicais e subtropicais onde as condições climáticas são
+        adequadas para a reprodução de seu principal vetor, o mosquito Aedes
+        aegypti. O interesse científico pela dengue continuou a crescer durante
+        os séculos XIX e XX, principalmente após a identificação, em 1943, do
+        vírus causador da doença, o vírus da dengue (DENV). Desde então, os
+        esforços para compreender, prevenir e controlar a dengue aumentaram. Tem
+        um impacto significativo em todo o mundo
+      </p>
     </div>
 
     <div class="content">
-        <div class="images-container">
-            <div class="image-wrapper">
-                <img src="/./assets/images/DengueDescoberta.jpg" alt="Imagem da Dengue">
-            </div>
-            <div class="image-wrapper">
-                <img src="/./assets/images/DengueDescoberta2.jpg" alt="Imagem da Dengue">
-            </div>
+      <div class="images-container">
+        <div class="image-wrapper">
+          <img
+            src="/assets/images/DengueDescoberta.jpg"
+            alt="Imagem da Dengue"
+          />
         </div>
+        <div class="image-wrapper">
+          <img
+            src="/assets/images/DengueDescoberta2.jpg"
+            alt="Imagem da Dengue"
+          />
+        </div>
+      </div>
     </div>
 
     <div class="content">
-        <!-- <h2>Pagina Inicial</h2> -->
-        <a href="/index.html">Volte para página inicial para saber mais sobre a Dengue !</a>
+      <a href="/index.html"
+        >Volte para página inicial para saber mais sobre a Dengue !</a
+      >
     </div>
-</body>
-
+    <footer id="contatos" class="grid sm-center mt-footer">
+      <h3 class="col-3 sm-col-12 sm-center">Contatos</h3>
+      <a class="col-3 sm-col-5" href="#">(15) 99999-9999</a>
+      <a class="col-3 sm-col-3" href="#">Facebook</a>
+      <a class="col-3 sm-col-3" href="#">Instagram</a>
+      <p class="col-12">
+        APS 2024 - Ecoponto Comunitário Contra Dengue e Conscientização Coletiva
+        a Comunidade
+      </p>
+    </footer>
+  </body>
 </html>

@@ -1,0 +1,28 @@
+body {
+  background-image: url("https://source.unsplash.com/1920x1080/?sustainable");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: #fff;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  flex-direction: column;
+}
+
+.content {
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+.images-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.image-wrapper {
+  margin-right: 5px;
+}
