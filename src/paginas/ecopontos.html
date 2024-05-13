@@ -3,11 +3,62 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=<device-width>, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
     <title>Ecopontos</title>
+
+    <link rel="stylesheet" href="../css/global.css" />
+    <link rel="icon" href="../../assets/images/favicon.ico" />
+
+    <script src="../js/header.js"></script>
   </head>
 
-  <body>
+  <body class="layout-principal">
+    <header id="header">
+      <a href="../../index.html">
+        <img id="logo" src="../../assets/images/logo.png" alt="logo do site" />
+      </a>
+
+      <nav class="menu-hamburger">
+        <input
+          id="menu-hamburguer"
+          type="checkbox"
+          onclick="onClickMenuHamburgue()"
+        />
+        <label for="menu-hamburguer">
+          <div class="menu">
+            <span class="hamburguer"></span>
+          </div>
+        </label>
+
+        <div class="menu-hamburguer-elements show">
+          <a href="../../index.html">
+            <img
+              id="logo2"
+              src="../../assets/images/logo.png"
+              alt="logo do site"
+            />
+          </a>
+          <ul>
+            <li><a href="./sobre.html">Sobre</a></li>
+            <li><a href="../../index.html#ecopontos">Ecopontos</a></li>
+            <li>
+              <a href="../../index.html#LocaisDengueMaps">Locais</a>
+            </li>
+            <li>
+              <a href="./tipos_lixos.html">Tipos de Lixo</a>
+            </li>
+            <li>
+              <a href="./concientizacao.html">Concientização</a>
+            </li>
+            <li>
+              <a href="./curiosidades.html">Curiosidades</a>
+            </li>
+            <li><a href="../../index.html#contatos">Contato</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
     <h1>Ecopontos em Sorocaba</h1>
     <p>
       Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, sapiente
