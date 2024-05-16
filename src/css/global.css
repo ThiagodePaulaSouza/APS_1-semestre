@@ -330,3 +330,7 @@ footer > p {
 .mt-footer {
   margin-top: 1rem;
 }
+
+footer p {
+  text-align: center;
+}
