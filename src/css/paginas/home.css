@@ -1,3 +1,18 @@
+section.concientizacao {
+  padding-inline: 0;
+  margin-top: 5rem;
+  width: 100%;
+}
+section.concientizacao > img {
+  width: 100%;
+}
+section.concientizacao > a {
+  position: absolute;
+  left: 50%;
+  bottom: 22%;
+  transform: translateX(-50%);
+}
+
 .card {
   padding: 1rem;
   box-shadow: 0 2px 1px -1px rgba(0, 255, 13, 0.2),
@@ -82,6 +97,9 @@ section#ecopontos {
 
 /* ----------------------- 800px x 1440px ------------------------*/
 @media only screen and (min-width: 800px) and (max-width: 1440px) {
+  section.concientizacao > a {
+    display: none;
+  }
   #mapa {
     width: 600px;
     height: 450px;
@@ -90,6 +108,9 @@ section#ecopontos {
 
 /* ----------------------- 100px x 799px ------------------------*/
 @media only screen and (min-width: 100px) and (max-width: 799px) {
+  section.concientizacao > a {
+    display: none;
+  }
   #form-denuncia {
     gap: 1.5rem;
     margin-top: 1rem;
