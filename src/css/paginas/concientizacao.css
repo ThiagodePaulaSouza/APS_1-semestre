@@ -1,5 +1,5 @@
 body {
-  background-image: url("https://source.unsplash.com/1920x1080/?sustainable");
+  background-image: url("../../../assets/images/concientizacao.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -9,5 +9,29 @@ body {
   justify-content: center;
   align-items: center;
   height: 100vh;
+  width: 100%;
   flex-direction: column;
+}
+h1 {
+  font-size: 2rem;
+  font-weight: bolder;
+}
+
+section {
+  padding-inline: 3rem;
+}
+
+.card {
+  border: 1px solid hsl(100, 60%, 60%);
+  border-radius: 10px;
+  backdrop-filter: blur(200px);
+  padding-block: 2rem;
+  margin-inline: 20rem;
+  margin-top: 10rem;
+}
+
+p {
+  line-height: 2rem;
+  margin-top: 1rem;
+  font-size: 1.2rem;
 }
