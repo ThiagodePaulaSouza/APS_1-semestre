@@ -8,6 +8,10 @@
   font-family: "Open Sans", sans-serif;
 }
 
+body {
+  height: 100vh;
+}
+
 .bold {
   font-weight: bold;
 }
@@ -358,4 +362,10 @@ footer p {
 
 .btn:hover {
   background: hsl(100, 60%, 40%);
+}
+
+.btn-voltar {
+  margin-top: 2rem;
+  padding: 0.7rem;
+  font-size: 1.2rem;
 }

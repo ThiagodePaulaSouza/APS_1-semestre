@@ -1,5 +1,5 @@
 body {
-  background-image: url("https://source.unsplash.com/1920x1080/?sustainable");
+  background-image: url("../../../assets/images/sorocaba.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -9,7 +9,17 @@ body {
   justify-content: center;
   align-items: center;
   height: 100vh;
+  width: 100%;
   flex-direction: column;
+}
+
+h1 {
+  font-size: 2rem;
+  font-weight: bolder;
+}
+
+section {
+  padding-inline: 3rem;
 }
 
 .content {
@@ -25,4 +35,47 @@ body {
 
 .image-wrapper {
   margin-right: 5px;
+}
+
+.ler-mais {
+  margin-block: 2rem;
+  display: inline-flex;
+  cursor: pointer;
+  -webkit-user-select: none;
+  user-select: none;
+  align-items: center;
+  vertical-align: bottom;
+  text-align: center;
+  overflow: hidden;
+  color: #ffffff;
+  border: 1px solid hsl(100, 60%, 60%);
+  padding: 0.5rem;
+  font-size: 1rem;
+  transition: background-color 0.2s, color 0.2s, border-color 0.2s,
+    box-shadow 0.2s, outline-color 0.2s;
+  border-radius: 6px;
+  backdrop-filter: blur(7px);
+}
+.ler-mais a {
+  color: #ffffff;
+}
+
+.ler-mais:hover {
+  color: #ffffff;
+  background: hsl(100, 60%, 50%);
+}
+
+.card {
+  border: 1px solid hsl(100, 60%, 60%);
+  border-radius: 10px;
+  backdrop-filter: blur(90px);
+  padding-top: 2rem;
+  margin-inline: 40rem;
+  margin-top: 10rem;
+}
+
+p {
+  line-height: 2rem;
+  margin-top: 1rem;
+  font-size: 1.2rem;
 }
