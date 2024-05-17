@@ -66,14 +66,6 @@ section {
 }
 
 .card {
-  /*Antigo CSS--*/
-  /* border: 1px solid hsl(100, 60%, 60%);
-  border-radius: 10px;
-  backdrop-filter: blur(90px);
-  padding-top: 2rem;
-  margin-inline: 40rem;
-  margin-top: 10rem; */
-
   width: 80%;
   max-width: 1200px;
   margin: 20px auto;
@@ -82,7 +74,7 @@ section {
   border-radius: 8px;
   backdrop-filter: blur(90px);
   margin-inline: 40rem;
-  margin-top: 10rem; 
+  margin-top: 10rem;
 }
 
 p {
@@ -91,5 +83,28 @@ p {
   font-size: 1.2rem;
 }
 
+/* ----------------------- 800px x 1440px ------------------------*/
+@media only screen and (min-width: 800px) and (max-width: 1440px) {
+  /* TODO: Alterar aqui */
+  .card {
+    padding-inline: 0;
+    margin-top: 10rem;
+  }
+}
 
-
+/* ----------------------- 100px x 799px ------------------------*/
+@media only screen and (min-width: 100px) and (max-width: 799px) {
+  h1 {
+    font-size: 1.5rem;
+    font-weight: bolder;
+  }
+  p {
+    line-height: 2rem;
+    margin-top: 1rem;
+    font-size: 1rem;
+  }
+  .card {
+    padding-inline: 0;
+    margin-top: 65rem;
+  }
+}
