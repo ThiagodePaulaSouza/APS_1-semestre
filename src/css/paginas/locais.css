@@ -5,8 +5,71 @@ body {
   background-attachment: fixed;
   color: #fff;
   padding-top: 100px;
-  /* Ajustado o padding */
   margin: 0;
   overflow: auto;
-  /* Permite a rolagem */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+  flex-direction: column;
+}
+
+.card {
+  width: 80%;
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 2rem;
+  padding-top: 2rem;
+  border-radius: 8px;
+  backdrop-filter: blur(90px);
+  margin-top: 5rem;
+}
+
+p {
+  line-height: 2rem;
+  margin-top: 1rem;
+  font-size: 1.2rem;
+}
+
+.grid {
+  margin-inline: 0;
+}
+
+.regioes {
+  margin-top: 0.5rem;
+}
+
+/* ----------------------- 800px x 1440px ------------------------*/
+@media only screen and (min-width: 800px) and (max-width: 1440px) {
+  /* TODO: Alterar aqui */
+  .card {
+    padding-inline: 2rem;
+    margin-top: 10rem;
+  }
+}
+
+/* ----------------------- 100px x 799px ------------------------*/
+@media only screen and (min-width: 100px) and (max-width: 799px) {
+  h1 {
+    font-size: 1.5rem;
+    font-weight: bolder;
+  }
+  p {
+    line-height: 2rem;
+    margin-top: 1rem;
+    font-size: 1rem;
+  }
+  .card {
+    padding: 1rem;
+    margin-top: 32rem;
+  }
+
+  section {
+    padding-inline: 0;
+  }
+}
+
+.py-3 {
+  padding-inline: 3rem;
 }

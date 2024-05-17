@@ -369,3 +369,7 @@ footer p {
   padding: 0.7rem;
   font-size: 1.2rem;
 }
+
+.gap-1 {
+  gap: 1rem;
+}
