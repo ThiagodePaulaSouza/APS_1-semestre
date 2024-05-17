@@ -1,118 +1,162 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title>Intuitivo Sobre Tipos de Lixos</title>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="stylesheet" href="../css/global.css" />
-    <link rel="stylesheet" href="../css/paginas/concientizacao.css" />
+  <title>Intuitivo Sobre Tipos de Lixos</title>
 
-    <link rel="icon" href="../../assets/images/favicon.ico" />
+  <link rel="stylesheet" href="../css/global.css" />
+  <link rel="stylesheet" href="../css/paginas/concientizacao.css" />
 
-    <script src="../js/header.js"></script>
-  </head>
+  <link rel="icon" href="../../assets/images/favicon.ico" />
 
-  <body class="layout-principal">
-    <header id="header">
-      <a href="../../index.html">
-        <img id="logo" src="../../assets/images/logo.png" alt="logo do site" />
-      </a>
+  <script src="../js/header.js"></script>
 
-      <nav class="menu-hamburger">
-        <input
-          id="menu-hamburguer"
-          type="checkbox"
-          onclick="onClickMenuHamburgue()"
-        />
-        <label for="menu-hamburguer">
-          <div class="menu">
-            <span class="hamburguer"></span>
-          </div>
-        </label>
+  <style>
+    body {
+      background-image: url("../../../assets/images/sorocaba.jpg");
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      color: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      height: 100vh;
+      width: 100%;
+      flex-direction: column;
+      padding: 20px; /* Ajustado o padding */
+      margin: 0;
+      overflow: auto; /* Permite a rolagem */
+    }
 
-        <div class="menu-hamburguer-elements show">
-          <a href="../../index.html">
-            <img
-              id="logo2"
-              src="../../assets/images/logo.png"
-              alt="logo do site"
-            />
-          </a>
-          <ul>
-            <li><a href="./sobre.html">Sobre</a></li>
-            <li><a href="../../index.html#ecopontos">Ecopontos</a></li>
-            <li>
-              <a href="../../index.html#LocaisDengueMaps">Locais</a>
-            </li>
-            <li>
-              <a href="./tipos_lixos.html">Tipos de Lixo</a>
-            </li>
-            <li>
-              <a href="./concientizacao.html">Concientização</a>
-            </li>
-            <li>
-              <a href="./curiosidades.html">Curiosidades</a>
-            </li>
-            <li><a href="../../index.html#contatos">Contato</a></li>
-          </ul>
+    .content {
+      text-align: left;
+      margin: 20px;
+      width: 100%; /* Ajustado para a largura total da página */
+      max-width: 1200px; /* Limite de largura para telas grandes */
+      background-color: rgba(0, 0, 0, 0.7); /* Fundo semitransparente */
+      padding: 20px;
+      border-radius: 10px;
+    }
+
+    .content img {
+      width: 100%; /* Ajuste para responsividade */
+      max-width: 300px; /* Tamanho máximo das imagens */
+      height: auto;
+      display: block;
+      margin-bottom: 10px;
+    }
+
+    .content li {
+      margin-bottom: 20px;
+    }
+
+    footer {
+      margin-top: 20px; /* Espaço adicional para evitar sobreposição */
+    }
+
+    footer p {
+      text-align: center;
+    }
+
+    .content a {
+      color: rgb(0, 250, 62); /* Altere para a cor desejada */
+    }
+  </style>
+
+</head>
+
+<body class="layout-principal">
+  <header id="header">
+    <a href="../../index.html">
+      <img id="logo" src="../../assets/images/logo.png" alt="logo do site" />
+    </a>
+
+    <nav class="menu-hamburger">
+      <input id="menu-hamburguer" type="checkbox" onclick="onClickMenuHamburgue()" />
+      <label for="menu-hamburguer">
+        <div class="menu">
+          <span class="hamburguer"></span>
         </div>
-      </nav>
-    </header>
+      </label>
 
-    <section class="content">
-      <h1>Lixos Reciclaveis</h1>
-      <p><b>Todo Lixo Tratavel</b></p>
-      <ol>
-        <li>Lixo orgânico</li>
-        <img src="../../assets/images/LixoOrganico.jpg" width="10%" />
-        <p></p>
-        <li>Lixo reciclável</li>
-        <img src="../../assets/images/LixoOrganico.jpg" width="10%" />
-        <p></p>
-        <li>Lixo doméstico</li>
-        <img src="../../assets/images/LixoOrganico.jpg" width="10%" />
-        <p></p>
-        <li>Lixo comercial</li>
-        <img src="../../assets/images/LixoOrganico.jpg" width="10%" />
-        <p></p>
-        <li>Lixo industrial</li>
-        <img src="../../assets/images/LixoOrganico.jpg" width="10%" />
-        <p></p>
-        <li>Lixo hospitalar</li>
-        <img src="../../assets/images/LixoOrganico.jpg" width="10%" />
-        <p></p>
-        <li>Lixo verde</li>
-        <img src="../../assets/images/LixoOrganico.jpg" width="10%" />
-        <p></p>
+      <div class="menu-hamburguer-elements show">
+        <a href="../../index.html">
+          <img id="logo2" src="../../assets/images/logo.png" alt="logo do site" />
+        </a>
+        <ul>
+          <li><a href="./sobre.html">Sobre</a></li>
+          <li><a href="../../index.html#ecopontos">Ecopontos</a></li>
+          <li>
+            <a href="../../index.html#LocaisDengueMaps">Locais</a>
+          </li>
+          <li>
+            <a href="./tipos_lixos.html">Tipos de Lixo</a>
+          </li>
+          <li>
+            <a href="./concientizacao.html">Conscientização</a>
+          </li>
+          <li>
+            <a href="./curiosidades.html">Curiosidades</a>
+          </li>
+          <li><a href="../../index.html#contatos">Contato</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
 
-        <li>Lixo eletrônico</li>
-        <img src="../../assets/images/LixoOrganico.jpg" width="10%" />
-        <p></p>
-      </ol>
+  <section class="content">
+    <h1>Lixos Recicláveis</h1>
+    <p><b>Todo Lixo Tratável</b></p>
+    <ol>
+      <li>Lixo orgânico
+        <img src="../../assets/images/LixoOrganico.jpg" alt="Lixo Orgânico" />
+      </li>
+      <li>Lixo reciclável
+        <img src="../../assets/images/LixoReciclavel.jpg" alt="Lixo Reciclável" />
+      </li>
+      <li>Lixo doméstico
+        <img src="../../assets/images/LixoDomestico.jpg" alt="Lixo Doméstico" />
+      </li>
+      <li>Lixo comercial
+        <img src="../../assets/images/LixoComercial.jpg" alt="Lixo Comercial" />
+      </li>
+      <li>Lixo industrial
+        <img src="../../assets/images/LixoIndustrial.jpg" alt="Lixo Industrial" />
+      </li>
+      <li>Lixo hospitalar
+        <img src="../../assets/images/LixoHospitalar.jpg" alt="Lixo Hospitalar" />
+      </li>
+      <li>Lixo verde
+        <img src="../../assets/images/LixoVerde.jpg" alt="Lixo Verde" />
+      </li>
+      <li>Lixo eletrônico
+        <img src="../../assets/images/LixoEletronico.jpg" alt="Lixo Eletrônico" />
+      </li>
+    </ol>
 
-      <h1>Listas Não Reciclaveis</h1>
-      <p><b>Todo Lixo Não Tratavel Usualmente</b></p>
-      <ul>
-        <li>Lixo hospitalar</li>
-        <p></p>
+    <h1>Listas Não Recicláveis</h1>
+    <p><b>Todo Lixo Não Tratável Usualmente</b></p>
+    <ul>
+      <li>Lixo hospitalar</li>
+      <li>Lixo radioativo</li>
+    </ul>
+  </section>
 
-        <li>Lixo radioativo</li>
-        <p></p>
-      </ul>
-    </section>
+  <footer id="contatos" class="grid sm-center mt-footer">
+    <h3 class="col-3 sm-col-12 sm-center">Contatos</h3>
+    <a class="col-3 sm-col-5" href="#">(15) 99999-9999</a>
+    <a class="col-3 sm-col-3" href="#">Facebook</a>
+    <a class="col-3 sm-col-3" href="#">Instagram</a>
+    <p class="col-12">
+      APS 2024 - Ecoponto Comunitário Contra Dengue e Conscientização Coletiva
+      a Comunidade
+    </p>
+  </footer>
+</body>
 
-    <footer id="contatos" class="grid sm-center mt-footer">
-      <h3 class="col-3 sm-col-12 sm-center">Contatos</h3>
-      <a class="col-3 sm-col-5" href="#">(15) 99999-9999</a>
-      <a class="col-3 sm-col-3" href="#">Facebook</a>
-      <a class="col-3 sm-col-3" href="#">Instagram</a>
-      <p class="col-12">
-        APS 2024 - Ecoponto Comunitário Contra Dengue e Conscientização Coletiva
-        a Comunidade
-      </p>
-    </footer>
-  </body>
 </html>

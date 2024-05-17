@@ -66,12 +66,23 @@ section {
 }
 
 .card {
-  border: 1px solid hsl(100, 60%, 60%);
+  /*Antigo CSS--*/
+  /* border: 1px solid hsl(100, 60%, 60%);
   border-radius: 10px;
   backdrop-filter: blur(90px);
   padding-top: 2rem;
   margin-inline: 40rem;
-  margin-top: 10rem;
+  margin-top: 10rem; */
+
+  width: 80%;
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 2rem;
+  padding-top: 2rem;
+  border-radius: 8px;
+  backdrop-filter: blur(90px);
+  margin-inline: 40rem;
+  margin-top: 10rem; 
 }
 
 p {
@@ -79,3 +90,6 @@ p {
   margin-top: 1rem;
   font-size: 1.2rem;
 }
+
+
+

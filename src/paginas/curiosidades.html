@@ -2,61 +2,52 @@
 <html lang="pt-br">
 
 <head>
-  <meta charset=" UTF-8" />
+  <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <title>Curiosidades</title>
+  <title>Intuitivo Sobre Tipos de Lixos</title>
 
   <link rel="stylesheet" href="../css/global.css" />
-  <link rel="stylesheet" href="../css/paginas/curiosidade.css" />
+  <link rel="stylesheet" href="../css/paginas/concientizacao.css" />
 
   <link rel="icon" href="../../assets/images/favicon.ico" />
 
   <script src="../js/header.js"></script>
 
-  <script src="../js/footer.js"></script>
-
-
   <style>
     body {
-      /* Estilo de fundo aleatório */
-      background-image: url('https://source.unsplash.com/1920x1080/?sustainable');
+      background-image: url("../../../assets/images/sorocaba.jpg");
       background-size: cover;
       background-repeat: no-repeat;
       background-attachment: fixed;
-      /* Outros estilos para melhor legibilidade do conteúdo */
       color: #fff;
-      padding: 0;
-      /* Removido o padding para ocupar toda a tela */
+      padding: 20px; /* Ajustado o padding */
       margin: 0;
-      /* Removido o margin para ocupar toda a tela */
+      overflow: auto; /* Permite a rolagem */
     }
 
     .content {
-      text-align: left;
+      margin: 20px;
+      padding: 20px;
+      background-color: rgba(0, 0, 0, 0.7); /* Fundo semitransparente */
+      border-radius: 10px;
+    }
+
+    .content img {
+      width: 100%; /* Ajuste para responsividade */
+      max-width: 400px; /* Tamanho máximo das imagens */
+      height: auto;
+      display: block;
+      margin-bottom: 10px;
+    }
+
+    .content li {
       margin-bottom: 20px;
-      /* Adicionado espaço abaixo do texto */
     }
 
-    .images-container {
-      display: flex;
-      justify-content: right;
-      margin-bottom: 20px;
-      /* Adicionado espaço abaixo das imagens */
-    }
-
-    .image-wrapper {
-      margin-right: 550px;
-      margin-left: 25px;
-      /* Alterado o espaçamento entre as imagens */
-    }
-
-    img {
-      max-width: auto;
-      /* Definido o tamanho máximo da imagem */
-      max-height: auto;
-      /* Manter a proporção da imagem */
+    footer {
+      margin-top: 20px; /* Espaço adicional para evitar sobreposição */
     }
 
     footer p {
@@ -64,9 +55,8 @@
     }
 
     .content a {
-  color: rgb(0, 250, 62); /* Altere para a cor desejada */
-}
-
+      color: rgb(0, 250, 62); /* Altere para a cor desejada */
+    }
   </style>
 
 </head>
@@ -99,7 +89,7 @@
             <a href="./tipos_lixos.html">Tipos de Lixo</a>
           </li>
           <li>
-            <a href="./concientizacao.html">Concientização</a>
+            <a href="./concientizacao.html">Conscientização</a>
           </li>
           <li>
             <a href="./curiosidades.html">Curiosidades</a>
@@ -110,33 +100,43 @@
     </nav>
   </header>
 
-  <div class="content">
-    <h1>Quando a Dengue Surgiu ?</h1>
-    <p>
-      A dengue é uma doença que existe há séculos, mas seus registros mais
-      antigos datam de textos chineses do século III dC. Naquela época, a
-      doença era chamada de “água venenosa” e “veias venenosas”. Ao longo da
-      história, a dengue foi encontrada em todo o mundo, principalmente em
-      regiões tropicais e subtropicais onde as condições climáticas são
-      adequadas para a reprodução de seu principal vetor, o mosquito Aedes
-      aegypti. O interesse científico pela dengue continuou a crescer durante
-      os séculos XIX e XX, principalmente após a identificação, em 1943, do
-      vírus causador da doença, o vírus da dengue (DENV). Desde então, os
-      esforços para compreender, prevenir e controlar a dengue aumentaram. Tem
-      um impacto significativo em todo o mundo
-    </p>
-  </div>
+  <section class="content">
+    <h1>Lixos Recicláveis</h1>
+    <p><b>Todo Lixo Tratável</b></p>
+    <ol>
+      <li>Lixo orgânico
+        <img src="../../assets/images/LixoOrganico.jpg" alt="Lixo Orgânico" />
+      </li>
+      <li>Lixo reciclável
+        <img src="../../assets/images/LixoReciclavel.jpg" alt="Lixo Reciclável" />
+      </li>
+      <li>Lixo doméstico
+        <img src="../../assets/images/LixoDomestico.jpg" alt="Lixo Doméstico" />
+      </li>
+      <li>Lixo comercial
+        <img src="../../assets/images/LixoComercial.jpg" alt="Lixo Comercial" />
+      </li>
+      <li>Lixo industrial
+        <img src="../../assets/images/LixoIndustrial.jpg" alt="Lixo Industrial" />
+      </li>
+      <li>Lixo hospitalar
+        <img src="../../assets/images/LixoHospitalar.jpg" alt="Lixo Hospitalar" />
+      </li>
+      <li>Lixo verde
+        <img src="../../assets/images/LixoVerde.jpg" alt="Lixo Verde" />
+      </li>
+      <li>Lixo eletrônico
+        <img src="../../assets/images/LixoEletronico.jpg" alt="Lixo Eletrônico" />
+      </li>
+    </ol>
 
-  <div class="content">
-    <div class="images-container">
-      <div class="image-wrapper">
-        <img src="../../assets/images/DengueDescoberta.jpg" alt="Imagem da Dengue" />
-      </div>
-      <div class="image-wrapper">
-        <img src="../../assets/images/DengueDescoberta2.jpg" alt="Imagem da Dengue" />
-      </div>
-    </div>
-  </div>
+    <h1>Listas Não Recicláveis</h1>
+    <p><b>Todo Lixo Não Tratável Usualmente</b></p>
+    <ul>
+      <li>Lixo hospitalar</li>
+      <li>Lixo radioativo</li>
+    </ul>
+  </section>
 
   <footer id="contatos" class="grid sm-center mt-footer">
     <h3 class="col-3 sm-col-12 sm-center">Contatos</h3>
@@ -148,11 +148,6 @@
       a Comunidade
     </p>
   </footer>
-
-  <div class="content">
-    <a href="../../index.html">Volte para página inicial para saber mais sobre a Dengue !</a>
-  </div>
-
 </body>
 
 </html>

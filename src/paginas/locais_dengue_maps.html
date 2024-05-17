@@ -2,100 +2,164 @@
 <html lang="pt-br">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Alguns Locais Onde existe Dengue Próximo a região de Sorocaba</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Locais Com Dengue Região de Sorocaba</title>
 
-    <link rel="stylesheet" href="../css/global.css" />
-    <link rel="icon" href="../../assets/images/favicon.ico" />
-    
-    <script src="../js/header.js"></script>
+  <link rel="stylesheet" href="../css/global.css" />
+  <link rel="icon" href="../../assets/images/favicon.ico" />
+
+  <script src="../js/header.js"></script>
 </head>
 
 <body>
-    <header id="header" class="layout-principal">
+  <header id="header" class="layout-principal">
+    <a href="../../index.html">
+      <img id="logo" src="../../assets/images/logo.png" alt="logo do site" />
+    </a>
+
+    <nav class="menu-hamburger">
+      <input id="menu-hamburguer" type="checkbox" onclick="onClickMenuHamburgue()" />
+      <label for="menu-hamburguer">
+        <div class="menu">
+          <span class="hamburguer"></span>
+        </div>
+      </label>
+
+      <div class="menu-hamburguer-elements show">
         <a href="../../index.html">
-          <img id="logo" src="../../assets/images/logo.png" alt="logo do site" />
+          <img id="logo2" src="../../assets/images/logo.png" alt="logo do site" />
         </a>
-  
-        <nav class="menu-hamburger">
-          <input
-            id="menu-hamburguer"
-            type="checkbox"
-            onclick="onClickMenuHamburgue()"
-          />
-          <label for="menu-hamburguer">
-            <div class="menu">
-              <span class="hamburguer"></span>
-            </div>
-          </label>
-  
-          <div class="menu-hamburguer-elements show">
-            <a href="../../index.html">
-              <img
-                id="logo2"
-                src="../../assets/images/logo.png"
-                alt="logo do site"
-              />
-            </a>
-            <ul>
-              <li><a href="./sobre.html">Sobre</a></li>
-              <li><a href="../../index.html#ecopontos">Ecopontos</a></li>
-              <li>
-                <a href="../../index.html#LocaisDengueMaps">Locais</a>
-              </li>
-              <li>
-                <a href="./tipos_lixos.html">Tipos de Lixo</a>
-              </li>
-              <li>
-                <a href="./concientizacao.html">Concientização</a>
-              </li>
-              <li>
-                <a href="./curiosidades.html">Curiosidades</a>
-              </li>
-              <li><a href="../../index.html#contatos">Contato</a></li>
-            </ul>
-          </div>
-        </nav>
-      </header>
-    <ol>
-        <li>
-            America
-        </li>
         <ul>
-            <li>Brasil</li>
-            <ol>
-                <li>SP - Sudeste</li>
-                <ul>
-                    <li> Sorocaba</li>
-                    <li> Votorantim</li>
-                    <li> Araçoiaba da Serra</li>
-                </ul>
-                <li>SP - Centro</li>
-                <ul>
-                    <li> São Paulo</li>
-                    <li> Guarulhos</li>
-                </ul>
-
-                <li>SP - Centro Oeste</li>
-                <ul>
-                    <li> Marilia </li>
-                </ul>
-
-                <li>SP - Noroeste</li>
-                <ul>
-                    <li> Campinas</li>
-                </ul>
+          <li><a href="./sobre.html">Sobre</a></li>
+          <li><a href="../../index.html#ecopontos">Ecopontos</a></li>
+          <li>
+            <a href="../../index.html#LocaisDengueMaps">Locais</a>
+          </li>
+          <li>
+            <a href="./tipos_lixos.html">Tipos de Lixo</a>
+          </li>
+          <li>
+            <a href="./concientizacao.html">Concientização</a>
+          </li>
+          <li>
+            <a href="./curiosidades.html">Curiosidades</a>
+          </li>
+          <li><a href="../../index.html#contatos">Contato</a></li>
         </ul>
+      </div>
+    </nav>
+  </header>
+
+  <style>
+    body {
+      background-image: url("../../../assets/images/sorocaba.jpg");
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      color: #fff;
+      padding-top: 100px;
+      /* Ajustado o padding */
+      margin: 0;
+      overflow: auto;
+      /* Permite a rolagem */
+    }
+  </style>
+  <section>
+    <h1>Prováveis Locais em Sorocaba de Descartes Incorretos - América</h1>
+    <ol>
+      <li>América / Brasil
+        <ul>
+          <li style="font-weight: bold; color: rgb(255, 255, 255);">SP - Sudeste</li>
+        </ul>
+        <ul style="margin-left: 20px; color:rgb(255, 255, 255); font-weight: bolder;">
+          <li style="color: rgb(255, 238, 0);">Sorocaba</li>
+          <li style="color: rgb(255, 238, 0);">Votorantim</li>
+          <li style="color: rgb(255, 238, 0);">Araçoiaba da Serra</li>
+        </ul>
+      </li>
+      </li>
     </ol>
-    <footer id="contatos" class="grid sm-center mt-footer">
-        <h3 class="col-3 sm-col-12 sm-center">Contatos</h3>
-        <a class="col-3 sm-col-5" href="#">(15) 99999-9999</a>
-        <a class="col-3 sm-col-3" href="#">Facebook</a>
-        <a class="col-3 sm-col-3" href="#">Instagram</a>
-        <p class="col-12">APS 2024 - Ecoponto Comunitário Contra Dengue e Conscientização Coletiva a Comunidade</p>
-     </footer>
+
+    <ol>
+      <ul>
+        <li style="font-weight: bold; color: rgb(255, 255, 255);">SP - Centro</li>
+      </ul>
+      <ul style="margin-left: 20px; color:rgb(255, 255, 255); font-weight: bolder;">
+        <li style="color: rgb(0, 17, 255);">São Paulo</li>
+        <li style="color: rgb(0, 17, 255);">Guarulhos</li>
+      </ul>
+      </li>
+    </ol>
+
+    <ol>
+      <ul>
+        <li style="font-weight: bold; color: rgb(255, 255, 255);">SP - Leste</li>
+      </ul>
+      <ul style="margin-left: 20px; color:rgb(255, 255, 255); font-weight: bolder;">
+        <li style="color: rgb(255, 153, 0);">Tatuapé</li>
+      </ul>
+      </li>
+    </ol>
+
+    <ol>
+      <ul>
+        <li style="font-weight: bold; color: rgb(255, 255, 255);">SP - Centro Oeste</li>
+      </ul>
+      <ul style="margin-left: 20px; color:rgb(255, 255, 255); font-weight: bolder;">
+        <li style="color: rgb(255, 81, 0);">Marilia</li>
+      </ul>
+      </li>
+    </ol>
+
+    <ol>
+      <ul>
+        <li style="font-weight: bold; color: rgb(255, 255, 255);">SP - Noroeste</li>
+      </ul>
+      <ul style="margin-left: 20px; color:rgb(166, 255, 0); font-weight: bolder;">
+        <li style="color: rgb(115, 255, 0);">Campinas</li>
+      </ul>
+      </li>
+    </ol>
+
+    <div>
+      <h2 style="color:chartreuse">Humberto de Campos</h2>
+      <img src="/assets/images/ponto1DengueExemplo.PNG" alt="img" />
+      <p>
+        Situado na Zona Oeste de Sorocaba, após pontilhão,
+        ponto tem descarte incorreto de resíduos pelos moradores.
+      </p>
+    </div>
+
+    <div>
+      <h2 style="color:chartreuse">Jardim Itanguá</h2>
+      <img src="/assets/images/ponto2DengueExemplo.PNG" alt="img" />
+      <p>
+        Situado na Zona Oeste de Sorocaba, próximo a
+        escola Elza Salvestro Bonilha ponto tem descarte incorreto de resíduos pelos
+        moradores.
+      </p>
+    </div>
+
+    <div>
+      <h2 style="color:chartreuse">Afonso Vergueiro</h2>
+      <img src="/assets/images/ponto3DengueExemplo.PNG" alt="img" />
+      <p>
+        Situado na Centro de Sorocaba, próximo ao Terminal
+        Santo Antonio ponto de ferrovia sem devida manutenção.
+      </p>
+    </div>
+
+  </section>
+
+  <footer id="contatos" class="grid sm-center mt-footer">
+    <h3 class="col-3 sm-col-12 sm-center">Contatos</h3>
+    <a class="col-3 sm-col-5" href="#">(15) 99999-9999</a>
+    <a class="col-3 sm-col-3" href="#">Facebook</a>
+    <a class="col-3 sm-col-3" href="#">Instagram</a>
+    <p class="col-12">APS 2024 - Ecoponto Comunitário Contra Dengue e Conscientização Coletiva a Comunidade</p>
+  </footer>
 </body>
 
 </html>
