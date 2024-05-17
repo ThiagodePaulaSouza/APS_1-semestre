@@ -177,7 +177,7 @@ input#menu-hamburguer:checked ~ .menu-hamburguer-elements {
 /* ----------------------- 800px x 1440px ------------------------*/
 @media only screen and (min-width: 800px) and (max-width: 1440px) {
   .menu-hamburguer-elements a:hover {
-    color: rgb(214, 161, 214);
+    color: hsl(100, 60%, 60%);
   }
 
   .menu-hamburger {
@@ -240,7 +240,7 @@ input#menu-hamburguer:checked ~ .menu-hamburguer-elements {
 /* ----------------------- 100px x 799px ------------------------*/
 @media only screen and (min-width: 100px) and (max-width: 799px) {
   .menu-hamburguer-elements a:hover {
-    color: rgb(214, 161, 214);
+    color: hsl(100, 60%, 60%);
   }
 
   .menu-hamburger {
