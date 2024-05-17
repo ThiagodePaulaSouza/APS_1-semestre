@@ -97,8 +97,11 @@ section#ecopontos {
 
 /* ----------------------- 800px x 1440px ------------------------*/
 @media only screen and (min-width: 800px) and (max-width: 1440px) {
-  section.concientizacao > a {
-    display: none;
+  section.concientizacao {
+    margin-top: 3.9rem;
+  }
+  section.concientizacao a {
+    bottom: 24%;
   }
   #mapa {
     width: 600px;
