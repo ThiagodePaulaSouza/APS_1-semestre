@@ -1,153 +1,184 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Intuitivo Sobre Tipos de Lixos</title>
 
-  <title>Intuitivo Sobre Tipos de Lixos</title>
+    <link rel="stylesheet" href="../css/global.css" />
+    <link rel="stylesheet" href="../css/paginas/concientizacao.css" />
 
-  <link rel="stylesheet" href="../css/global.css" />
-  <link rel="stylesheet" href="../css/paginas/concientizacao.css" />
+    <link rel="icon" href="../../assets/images/favicon.ico" />
 
-  <link rel="icon" href="../../assets/images/favicon.ico" />
+    <script src="../js/header.js"></script>
 
-  <script src="../js/header.js"></script>
+    <style>
+      body {
+        background-image: url("../../../assets/images/sorocaba.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        color: #fff;
+        padding: 20px; /* Ajustado o padding */
+        margin: 0;
+        overflow: auto; /* Permite a rolagem */
+      }
 
-  <style>
-    body {
-      background-image: url("../../../assets/images/sorocaba.jpg");
-      background-size: cover;
-      background-repeat: no-repeat;
-      background-attachment: fixed;
-      color: #fff;
-      padding: 20px; /* Ajustado o padding */
-      margin: 0;
-      overflow: auto; /* Permite a rolagem */
-    }
+      .content {
+        margin: 20px;
+        padding: 20px;
+        background-color: rgba(0, 0, 0, 0.7); /* Fundo semitransparente */
+        border-radius: 10px;
+      }
 
-    .content {
-      margin: 20px;
-      padding: 20px;
-      background-color: rgba(0, 0, 0, 0.7); /* Fundo semitransparente */
-      border-radius: 10px;
-    }
+      .content img {
+        width: 100%; /* Ajuste para responsividade */
+        max-width: 400px; /* Tamanho máximo das imagens */
+        height: auto;
+        display: block;
+        margin-bottom: 10px;
+      }
 
-    .content img {
-      width: 100%; /* Ajuste para responsividade */
-      max-width: 400px; /* Tamanho máximo das imagens */
-      height: auto;
-      display: block;
-      margin-bottom: 10px;
-    }
+      .content li {
+        margin-bottom: 20px;
+      }
 
-    .content li {
-      margin-bottom: 20px;
-    }
+      footer {
+        margin-top: 20px; /* Espaço adicional para evitar sobreposição */
+      }
 
-    footer {
-      margin-top: 20px; /* Espaço adicional para evitar sobreposição */
-    }
+      footer p {
+        text-align: center;
+      }
 
-    footer p {
-      text-align: center;
-    }
+      .content a {
+        color: rgb(0, 250, 62); /* Altere para a cor desejada */
+      }
+    </style>
+  </head>
 
-    .content a {
-      color: rgb(0, 250, 62); /* Altere para a cor desejada */
-    }
-  </style>
+  <body class="layout-principal">
+    <header id="header">
+      <a href="../../index.html">
+        <img id="logo" src="../../assets/images/logo.png" alt="logo do site" />
+      </a>
 
-</head>
+      <nav class="menu-hamburger">
+        <input
+          id="menu-hamburguer"
+          type="checkbox"
+          onclick="onClickMenuHamburgue()"
+        />
+        <label for="menu-hamburguer">
+          <div class="menu">
+            <span class="hamburguer"></span>
+          </div>
+        </label>
 
-<body class="layout-principal">
-  <header id="header">
-    <a href="../../index.html">
-      <img id="logo" src="../../assets/images/logo.png" alt="logo do site" />
-    </a>
-
-    <nav class="menu-hamburger">
-      <input id="menu-hamburguer" type="checkbox" onclick="onClickMenuHamburgue()" />
-      <label for="menu-hamburguer">
-        <div class="menu">
-          <span class="hamburguer"></span>
+        <div class="menu-hamburguer-elements show">
+          <a href="../../index.html">
+            <img
+              id="logo2"
+              src="../../assets/images/logo.png"
+              alt="logo do site"
+            />
+          </a>
+          <ul>
+            <li><a href="./sobre.html">Sobre</a></li>
+            <li><a href="../../index.html#ecopontos">Ecopontos</a></li>
+            <li>
+              <a href="../../index.html#LocaisDengueMaps">Locais</a>
+            </li>
+            <li>
+              <a href="./tipos_lixos.html">Tipos de Lixo</a>
+            </li>
+            <li>
+              <a href="./concientizacao.html">Conscientização</a>
+            </li>
+            <li>
+              <a href="./curiosidades.html">Curiosidades</a>
+            </li>
+            <li><a href="#contatos">Contato</a></li>
+          </ul>
         </div>
-      </label>
+      </nav>
+    </header>
 
-      <div class="menu-hamburguer-elements show">
-        <a href="../../index.html">
-          <img id="logo2" src="../../assets/images/logo.png" alt="logo do site" />
-        </a>
-        <ul>
-          <li><a href="./sobre.html">Sobre</a></li>
-          <li><a href="../../index.html#ecopontos">Ecopontos</a></li>
-          <li>
-            <a href="../../index.html#LocaisDengueMaps">Locais</a>
-          </li>
-          <li>
-            <a href="./tipos_lixos.html">Tipos de Lixo</a>
-          </li>
-          <li>
-            <a href="./concientizacao.html">Conscientização</a>
-          </li>
-          <li>
-            <a href="./curiosidades.html">Curiosidades</a>
-          </li>
-          <li><a href="../../index.html#contatos">Contato</a></li>
-        </ul>
-      </div>
-    </nav>
-  </header>
+    <section class="content">
+      <h1>Lixos Recicláveis</h1>
+      <p><b>Todo Lixo Tratável</b></p>
+      <ol>
+        <li>
+          Lixo orgânico
+          <img src="../../assets/images/LixoOrganico.jpg" alt="Lixo Orgânico" />
+        </li>
+        <li>
+          Lixo reciclável
+          <img
+            src="../../assets/images/LixoReciclavel.jpg"
+            alt="Lixo Reciclável"
+          />
+        </li>
+        <li>
+          Lixo doméstico
+          <img
+            src="../../assets/images/LixoDomestico.jpg"
+            alt="Lixo Doméstico"
+          />
+        </li>
+        <li>
+          Lixo comercial
+          <img
+            src="../../assets/images/LixoComercial.jpg"
+            alt="Lixo Comercial"
+          />
+        </li>
+        <li>
+          Lixo industrial
+          <img
+            src="../../assets/images/LixoIndustrial.jpg"
+            alt="Lixo Industrial"
+          />
+        </li>
+        <li>
+          Lixo hospitalar
+          <img
+            src="../../assets/images/LixoHospitalar.jpg"
+            alt="Lixo Hospitalar"
+          />
+        </li>
+        <li>
+          Lixo verde
+          <img src="../../assets/images/LixoVerde.jpg" alt="Lixo Verde" />
+        </li>
+        <li>
+          Lixo eletrônico
+          <img
+            src="../../assets/images/LixoEletronico.jpg"
+            alt="Lixo Eletrônico"
+          />
+        </li>
+      </ol>
 
-  <section class="content">
-    <h1>Lixos Recicláveis</h1>
-    <p><b>Todo Lixo Tratável</b></p>
-    <ol>
-      <li>Lixo orgânico
-        <img src="../../assets/images/LixoOrganico.jpg" alt="Lixo Orgânico" />
-      </li>
-      <li>Lixo reciclável
-        <img src="../../assets/images/LixoReciclavel.jpg" alt="Lixo Reciclável" />
-      </li>
-      <li>Lixo doméstico
-        <img src="../../assets/images/LixoDomestico.jpg" alt="Lixo Doméstico" />
-      </li>
-      <li>Lixo comercial
-        <img src="../../assets/images/LixoComercial.jpg" alt="Lixo Comercial" />
-      </li>
-      <li>Lixo industrial
-        <img src="../../assets/images/LixoIndustrial.jpg" alt="Lixo Industrial" />
-      </li>
-      <li>Lixo hospitalar
-        <img src="../../assets/images/LixoHospitalar.jpg" alt="Lixo Hospitalar" />
-      </li>
-      <li>Lixo verde
-        <img src="../../assets/images/LixoVerde.jpg" alt="Lixo Verde" />
-      </li>
-      <li>Lixo eletrônico
-        <img src="../../assets/images/LixoEletronico.jpg" alt="Lixo Eletrônico" />
-      </li>
-    </ol>
+      <h1>Listas Não Recicláveis</h1>
+      <p><b>Todo Lixo Não Tratável Usualmente</b></p>
+      <ul>
+        <li>Lixo hospitalar</li>
+        <li>Lixo radioativo</li>
+      </ul>
+    </section>
 
-    <h1>Listas Não Recicláveis</h1>
-    <p><b>Todo Lixo Não Tratável Usualmente</b></p>
-    <ul>
-      <li>Lixo hospitalar</li>
-      <li>Lixo radioativo</li>
-    </ul>
-  </section>
-
-  <footer id="contatos" class="grid sm-center mt-footer">
-    <h3 class="col-3 sm-col-12 sm-center">Contatos</h3>
-    <a class="col-3 sm-col-5" href="#">(15) 99999-9999</a>
-    <a class="col-3 sm-col-3" href="#">Facebook</a>
-    <a class="col-3 sm-col-3" href="#">Instagram</a>
-    <p class="col-12">
-      APS 2024 - Ecoponto Comunitário Contra Dengue e Conscientização Coletiva
-      a Comunidade
-    </p>
-  </footer>
-</body>
-
+    <footer id="contatos" class="grid sm-center mt-footer">
+      <h3 class="col-3 sm-col-12 sm-center">Contatos</h3>
+      <a class="col-3 sm-col-5" href="#">(15) 99999-9999</a>
+      <a class="col-3 sm-col-3" href="#">Facebook</a>
+      <a class="col-3 sm-col-3" href="#">Instagram</a>
+      <p class="col-12">
+        APS 2024 - Ecoponto Comunitário Contra Dengue e Conscientização Coletiva
+        a Comunidade
+      </p>
+    </footer>
+  </body>
 </html>

@@ -1,0 +1,12 @@
+body {
+  background-image: url("../../../assets/images/sorocaba.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: #fff;
+  padding-top: 100px;
+  /* Ajustado o padding */
+  margin: 0;
+  overflow: auto;
+  /* Permite a rolagem */
+}
