@@ -8,64 +8,11 @@
     <title>Intuitivo Sobre Tipos de Lixos</title>
 
     <link rel="stylesheet" href="../css/global.css" />
-    <link rel="stylesheet" href="../css/paginas/concientizacao.css" />
+    <link rel="stylesheet" href="../css/paginas/tipos_lixos.css" />
 
     <link rel="icon" href="../../assets/images/favicon.ico" />
 
     <script src="../js/header.js"></script>
-
-    <style>
-      body {
-        background-image: url("../../../assets/images/sorocaba.jpg");
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-attachment: fixed;
-        color: #fff;
-        display: flex;
-        justify-content: center;
-        align-items: flex-start;
-        height: 100vh;
-        width: 100%;
-        flex-direction: column;
-        padding: 20px; /* Ajustado o padding */
-        margin: 0;
-        overflow: auto; /* Permite a rolagem */
-      }
-
-      .content {
-        text-align: left;
-        margin: 20px;
-        width: 100%; /* Ajustado para a largura total da página */
-        max-width: 1200px; /* Limite de largura para telas grandes */
-        background-color: rgba(0, 0, 0, 0.7); /* Fundo semitransparente */
-        padding: 20px;
-        border-radius: 10px;
-      }
-
-      .content img {
-        width: 100%; /* Ajuste para responsividade */
-        max-width: 300px; /* Tamanho máximo das imagens */
-        height: auto;
-        display: block;
-        margin-bottom: 10px;
-      }
-
-      .content li {
-        margin-bottom: 20px;
-      }
-
-      footer {
-        margin-top: 20px; /* Espaço adicional para evitar sobreposição */
-      }
-
-      footer p {
-        text-align: center;
-      }
-
-      .content a {
-        color: rgb(0, 250, 62); /* Altere para a cor desejada */
-      }
-    </style>
   </head>
 
   <body class="layout-principal">
@@ -115,69 +62,91 @@
       </nav>
     </header>
 
-    <section class="content">
-      <h1>Lixos Recicláveis</h1>
-      <p><b>Todo Lixo Tratável</b></p>
-      <ol>
-        <li>
-          Lixo orgânico
+    <section class="center h1-lixo">
+      <h1 class="center">Lixos Recicláveis</h1>
+    </section>
+
+    <section class="card tratavel">
+      <h2 class="center mb-1">Lixos Tratáveis</h2>
+
+      <div class="grid gap-1">
+        <div class="col">
+          <b>Lixo orgânico</b>
           <img src="../../assets/images/LixoOrganico.jpg" alt="Lixo Orgânico" />
-        </li>
-        <li>
-          Lixo reciclável
+        </div class="col">
+
+        <div class="col">
+          <b>Lixo reciclável</b>
           <img
             src="../../assets/images/LixoReciclavel.jpg"
             alt="Lixo Reciclável"
           />
-        </li>
-        <li>
-          Lixo doméstico
+        </div class="col">
+
+        <div class="col">
+          <b>Lixo doméstico</b>
           <img
             src="../../assets/images/LixoDomestico.jpg"
             alt="Lixo Doméstico"
           />
-        </li>
-        <li>
-          Lixo comercial
+        </div class="col">
+
+        <div class="col">
+          <b>Lixo comercial</b>
           <img
             src="../../assets/images/LixoComercial.jpg"
             alt="Lixo Comercial"
           />
-        </li>
-        <li>
-          Lixo industrial
+        </div class="col">
+        <div class="col">
+          <b>Lixo industrial</b>
           <img
             src="../../assets/images/LixoIndustrial.jpg"
             alt="Lixo Industrial"
           />
-        </li>
-        <li>
-          Lixo hospitalar
-          <img
-            src="../../assets/images/LixoHospitalar.jpg"
-            alt="Lixo Hospitalar"
-          />
-        </li>
-        <li>
-          Lixo verde
-          <img src="../../assets/images/LixoVerde.jpg" alt="Lixo Verde" />
-        </li>
-        <li>
-          Lixo eletrônico
+        </div class="col">
+        
+        <div class="col">
+          <b>Lixo verde</b>
+          <img src="../../assets/images/LixoVerde.png" alt="Lixo Verde" />
+        </div class="col">
+        <div class="col">
+          <b>Lixo eletrônico</b>
           <img
             src="../../assets/images/LixoEletronico.jpg"
             alt="Lixo Eletrônico"
           />
-        </li>
-      </ol>
-
-      <h1>Listas Não Recicláveis</h1>
-      <p><b>Todo Lixo Não Tratável Usualmente</b></p>
-      <ul>
-        <li>Lixo hospitalar</li>
-        <li>Lixo radioativo</li>
-      </ul>
+        </div class="col">
+      </div>
     </section>
+
+    <section class="card n-tratavel">
+      <h1 class="center">Listas Não Recicláveis </h1>
+      <small class=" center mb-1">(Todo Lixo Não Tratável Usualmente)</small>
+      
+      <div class="grid gap-1">
+        <div class="col">
+          <p>
+            <b>Lixo hospitalar</b>
+          </p>
+          <img
+            src="../../assets/images/LixoHospitalar.jpg"
+            alt="Lixo Hospitalar"
+          />
+        </div class="col">
+        <div class="col">
+          <p>
+            <b>Lixo radioativo</b>
+          </p>
+          <img
+            src="../../assets/images/LixoRadioativo.jpg"
+            alt="Lixo Eletrônico"
+          />
+        </div>
+      </div>
+    </section>
+
+    <button class="btn btn-voltar" onclick="history.back()">Voltar</button>
 
     <footer id="contatos" class="grid sm-center mt-footer">
       <h3 class="col-3 sm-col-12 sm-center">Contatos</h3>
